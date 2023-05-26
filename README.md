@@ -1,2 +1,4 @@
-# Portfolio-2022
-💼 All 2022 Projects Compilation
+# Portfolio 2023
+## 📄 About
+## 🔧 Software/Hardware Requierments
+## ⚙️ Instalation/Configuration Process
