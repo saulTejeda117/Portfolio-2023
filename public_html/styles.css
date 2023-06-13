@@ -1,143 +1,299 @@
-ul { 
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.dabutton {
-  display: block;
-  color: #111;
-  text-align: center;
-  padding: 10px 20px;
-  background: None;
-  border: 0;
-  text-decoration: none;
-  font-family: 'Helvetica';
-  color: #fff;
-  opacity: 70%;
-  transition: transform .5s;
-  transform: scale(1) rotate(0.01deg);
-}
-.dabutton:hover {
-  transition: transform .5s;
-  transform: scale(1.5) rotate(0.01deg);
-  position: relative;
-  opacity: 100%;
-}
-
-.dabutton:focus {
-  transition: transform .5s;
-  transform: scale(1.5) rotate(0.01deg);
-  position: relative;
-  opacity: 100%;
-}
-
-main{
-  width: 100%;
-  height: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-.menu {
-  display: block;
-  align-items: center;
-}
-
-.menuIcons{
-  width: 60px;
-  height: 60px;
-}
-.configIcons{
-  width: 50px;
-  height: 50px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  font-family: 'Helvetica';
-  padding: 10px 10px;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:focus-within .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}*/
-
-html,
 body {
-  height: 100%;
-}
-
-body {
-  background:#433388;
-  overflow: hidden;
-}
-
-.ocean {
-  height: 5%;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: .3;
-  background: #6b5da4;
-}
-
-.wave {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg) repeat-x;
-  position: absolute;
-  bottom: -2px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
-  transform: translate3d(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
   
-}
-.wave2 {
-  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/756881/wavePurple.svg) repeat-x;
-  position: absolute;
-  bottom: -2px;
-  width: 6400px;
-  height: 198px;
-  animation: wave 40s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite, swell 8s ease -1.25s infinite;;
-  transform: translate3d(0, 0, 0);
-  opacity: .3;
-}
-
-
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100%;
+    width: 100%;
   }
-  100% {
-    margin-left: -1600px;
+  
+  .section-1 h1 {
+    padding: 0;
+    margin-bottom: 0px;
+    color: #232323;
   }
-}
-@keyframes swell {
-  0%,
-  100% {
-    transform: translate3d(0, -40px, 0);
+  
+  .section-1 p {
+    margin-top: 0px;
+    color: #3d3d3d;
   }
-  50% {
-    transform: translate3d(0, -10px, 0);
+  
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
   }
-}
-.endWave{
-  display:none;
-}
+  
+  .section-1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('src/img/florian-olivo-4hbJ-eymZ1o-unsplash.webp');
+    background-size: cover;
+    opacity: 20%;
+    filter: brightness(100%);
+    filter: blur(3px);
+    z-index: -1;
+  }
+  
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: left;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .section-2 h1 {
+    font-size: 50px;
+  }
+  
+  .section-2 p,
+  ul {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 1.5;
+  }
+  
+  .icon-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Ajusta el espacio entre los iconos según tus preferencias */
+  }
+  
+  .icon-opacity {
+    opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
+  }
+  
+  .icon-size {
+    font-size: 24px; /* Ajusta el tamaño según tus preferencias */
+  }
+  
+  .section-1 img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0px 0px 23px rgba(0, 0, 0, 0.25);
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .container {
+      grid-template-columns: 30% 70%;
+    }
+    .section-1 {
+      text-align: left;
+    }
+  }
+  
+  .section-2 {
+    background-color: #f0f1f2;
+  }
+  
+  .about-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .about-content {
+    margin: 10px;
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .modal {
+    display: none;
+  
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 5s;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #3d3d3d;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    animation-name: show-modal;
+    animation-duration: 0.5s;
+    border: none;
+  }
+  
+  @keyframes show-modal {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-hide {
+    animation-name: hide-modal;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hide-modal {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #3d3d3d;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .custom-button {
+    width: 150px;
+    background-color: #888888; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espacio interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Borde redondeado */
+    cursor: pointer;
+    transition: 0.25s; /* Cambia el cursor al pasar por encima */
+  }
+  
+  .custom-button:hover {
+    background-color: #232323;
+    transition: 0.25s; /* Cambia el color de fondo al pasar por encima */
+  }
+  
+  .custom-button:active {
+    background-color: #232323;
+    transition-delay: 0.01s; /* Cambia el color de fondo al hacer clic */
+  }
+  
+  .modal-btn {
+    width: 150px;
+    background-color: #3d3d3d;
+    border-width: 3px; /* Color de fondo */
+    color: #f0f1f2; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    border-radius: 4px;
+    transition: 0.5s;
+    transition-delay: 0.1s; /* Bordes redondeados */
+  }
+  
+  .modal-btn:hover {
+    background-color: #232323;
+    transition-delay: 0.01s; /* Cambiar el color de fondo al pasar el cursor */
+  }
+  
+  .mywork {
+    width: 150px;
+    margin: 10px;
+    border-width: 3px;
+    border-color: #3d3d3d;
+    background-color: transparent; /* Color de fondo */
+    color: #3d3d3d; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    /* border: none; Sin borde */
+    cursor: pointer;
+    border-radius: 4px; /* Bordes redondeados */
+    border-style: solid;
+    transition: 0.5s;
+    transition-delay: 0.01s;
+    /* Transición para el color de fondo y el color del texto */
+  }
+  
+  .mywork:hover {
+    background-color: #232323;
+    border-color: #232323;
+    color: #f0f1f2; /* Cambiar el color de fondo al pasar el cursor */
+    transition-delay: 0.01s;
+    /* Retraso de 0.5 segundos antes de aplicar la transición */
+  }
+  
+  /* Estilos responsivos */
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      grid-template-columns: 100%;
+    }
+    .section-1 {
+      text-align: center;
+    }
+    .section-2 {
+      align-items: center;
+      text-align: center;
+    }
+    .about-container {
+      max-width: 100%;
+    }
+  }
+  

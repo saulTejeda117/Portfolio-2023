@@ -1,76 +1,88 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" href="styles.css">
-	<title>Saúl Tejeda Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-	<main>
-		<!-- Main-menu Elements -->
-		<div class="menu">
-			<ul>
-				<li>
-					<div class="dropdown">
-						<button class="dabutton" tabindex="3" onclick="myFunction()">
-							<figure>
-								<img src="src/configuration.png" class="menuIcons"></img>
-								<figcaption> Configuration </figcaption>
-							</figure>
-						</button>
-						<div class="dropdown-content">
-							<button class="dabutton" tabindex="3" onclick="myFunction()">
-							    <figure>
-									<img src="src/wallpaperIcon.png" class="configIcons"></img>
-									<figcaption> Theme </figcaption>
-								</figure>
-							</button>
+    <!-- Contenido de la página -->
+    <div class="container">
+        <div class="section-1">
+            <img src="src/img/WhatsApp Image 2022-10-15 at 7.56.24 PM.jpeg" alt="Profile Image">
+            <h1>Saúl Tejeda</h1>
+            <p>IT Engineer</p>
+            <button id="myBtn" class="modal-btn">Contact me</button>
+            <button class="mywork">My work</button>
+            <!-- Contenido de la sección 1 -->
+        </div>
+        <div class="section-2">
+            <div class="about-container">                
+                <div class="about-content">
+                    <h1>About</h1>
+                    <p>👋Hello there! My name is Saúl Tejeda, an IT Engineering student at the Universidad de Guadalajara. With a passion for technology and a hunger for knowledge, I actively engage in exploring new tools and techniques in the ever-evolving world of IT.</p>
+                    <ul>
+                        <li>🤖 Machine learning techniques</li>
+                        <li>🖥️ Desktop development using Python</li>
+                        <li>📶 IoT applications</li>
+                    </ul>
+                    <div class="icon-container">
+                        <i class="fab fa-github icon-opacity icon-size"></i>
+                        <i class="fab fa-linkedin icon-opacity icon-size"></i>
+                        <i class="fab fa-css3 icon-opacity icon-size"></i>
+                        <i class="fab fa-js icon-opacity icon-size"></i>
+                        <i class="fab fa-python icon-opacity icon-size"></i>
+                    </div>
+                </div>        
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact me</h2>
+            <button class="custom-button">Send</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var modal = document.getElementById('myModal');
+            var btn = document.getElementById('myBtn');
+            var span = document.getElementsByClassName('close')[0];
+            btn.onclick = function () {
+                modal.style.display = 'block';
+                setTimeout(function () {
+                    modal.classList.add('show-modal');
+                }, 100); // Add a 100ms delay before showing the modal
+            };
+            span.onclick = function () {
+                modal.classList.remove('show-modal');
+                modal.classList.add('modal-hide');
+                setTimeout(function () {
+                    modal.style.display = 'none';
+                    modal.classList.remove('modal-hide');
+                }, 300); // Add a 300ms delay before hiding the modal
+            };
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.classList.remove('show-modal');
+                    modal.classList.add('modal-hide');
+                    setTimeout(function () {
+                        modal.style.display = 'none';
+                        modal.classList.remove('modal-hide');
+                    }, 300); // Add a 300ms delay before hiding the modal
+                }
+            };
+        });
+    </script>
 
-							<button class="dabutton" tabindex="3" onclick="myFunction()">
-							    <figure>
-									<img src="src/language_1214538_68197.png" class="configIcons"></img>
-								<figcaption> Idiom </figcaption>
-								</figure>
-							</button>
-
-							<button class="dabutton" tabindex="3" onclick="myFunction()">
-							    <figure>
-									<img src="src/volumeIcon.png" class="configIcons"></img>
-								<figcaption> Sound </figcaption>
-								</figure>
-							</button>
-						</div>
-					</div>
-
-					<button class="dabutton" tabindex="1">
-						<figure>
-							<img src="src/folder.png" class="menuIcons"></img>
-							<figcaption> Projects </figcaption>
-						</figure>
-					</button>
-					<button class="dabutton" tabindex="2">
-						<figure>
-							<img src="src/plus.png" class="menuIcons"></img>
-							<figcaption> More Information </figcaption>
-						</figure>
-					</button>
-					
-					<button class="dabutton" tabindex="2">
-						<figure>
-							<img src="src/git.png" class="menuIcons"></img>
-							<figcaption> Social Media </figcaption>
-						</figure>
-					</button>
-				</li>
-			</ul>
-		</div>
-	</main>
-	<!-- Back-ground wave effect -->
-	<div class="ocean">
-		<div class="wave"></div>
-		<div class="wave2"></div>
-	</div>
 </body>
+<!-- <footer>
+    <p>© Saúl Tejeda</p>
+</footer> -->
 </html>
+
+
+
