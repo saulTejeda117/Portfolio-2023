@@ -1,6 +1,7 @@
 const most_used_languages = 'json/most_used_languages.json';
 const most_used_languages_reader = new FileReader();
 
+
 most_used_languages_reader.onload = function (e) {
     const content = e.target.result;
     console.log('Contenido del most_used_languages:', content);

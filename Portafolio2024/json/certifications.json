@@ -5,46 +5,6 @@
         "link": "https://freecodecamp.org/certification/fccf7ac041e-5128-449a-86e2-cdfb3c5a2fc2/foundational-c-sharp-with-microsoft"
     },
     {  
-        "name": "Aprende análisis de datos: Ampliación y aplicación de los conocimientos básicos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/27c4c149fcc6634f8f495c33c31eb994c29b3dbb4a7fab8652f6dd9fca055ba2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
-    },
-    {  
-        "name": "Aprende análisis de datos: fundamentos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/3984eb2efe66dd0d258b8571c2564b820dc73950cde6c40168400ea54fa3c943?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
-    }, 
-    {  
-        "name": "Aprende data science: Conceptos básicos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/0aecc0abb905c8e961c4a42e5050ecfadd50ea53d43cb821f28490dfaaab85c4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
-    }, 
-    {  
-        "name": "Aprende data science: Cuenta historias con los datos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/ca4f46a3dbbf83aeecae517689eed3d718a1bb6b118f9dcc722acc3130f72e63?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
-        "name": "Fundamentos de la ciberseguridad para profesionales IT",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/fce0320362d1591d09a5f9cfb7e9fa771191b05ae157c824a9a7aad8e3f0504b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
-        "name": "Desafío de programación: Python para ciencia de datos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/9a1da238bcd31dfe0a96cec2401412d805c3df1e3f6921d36922138aabcf04a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
-        "name": "Introducción a Microsoft 365",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/3b72f74dfcc755ba7c8c92e43f18515b64b3e9cb8a61be70237bb7382e2ed1c8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
-        "name": "Introducción a las habilidades profesionales en análisis de datos",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/e133b338a7dbf7b215f6b3f852cb86ef3f9c48c057e94dc6542d95e1f6e8fb99?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
         "name": "Ruta de aprendizaje de alfabetización digital y productividad",
         "company": "LinkedIn Learning",
         "link": "https://www.linkedin.com/learning/certificates/eee68c83284753cb04e85086bf1afeb80df961b1853d9aec6c45e927a0095efd?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
@@ -55,24 +15,34 @@
         "link": "https://www.linkedin.com/learning/certificates/bda1c3ccf19455234f302fd3d4172704e7e2f41c2cad0e14dd97147b2d099c8c?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
     }, 
     {  
-        "name": "Trabajando y colaborando online",
-        "company": "LinkedIn Learning",
-        "link": "https://www.linkedin.com/learning/certificates/ebe059c8fa4af027cc68b0ab737b8fd01e2396e87d8097f08ed65856daf4c023?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
-    }, 
-    {  
         "name": "Applied Data Science with Python - Level 2",
         "company": "IBM",
         "link": "https://www.credly.com/badges/18cf149d-954c-4911-945e-7a57edf64f2e/linked_in_profile"
     }, 
+    {  
+        "name": "Aprende análisis de datos: Ampliación y aplicación de los conocimientos básicos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/27c4c149fcc6634f8f495c33c31eb994c29b3dbb4a7fab8652f6dd9fca055ba2?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
+    },
     {  
         "name": "Cyber Threat Management",
         "company": "Cisco",
         "link": "https://www.credly.com/badges/d79c2197-b4e1-4639-bac2-753073de9d93/linked_in_profile"
     }, 
     {  
+        "name": "Trabajando y colaborando online",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/ebe059c8fa4af027cc68b0ab737b8fd01e2396e87d8097f08ed65856daf4c023?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
+    }, 
+    {  
         "name": "Junior Cybersecurity Analyst Career",
         "company": "Cisco",
         "link": "https://www.credly.com/badges/298cbed6-35d7-4704-b877-b41bd93580f7/linked_in?t=rt89fr"
+    }, 
+    {  
+        "name": "Aprende análisis de datos: fundamentos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/3984eb2efe66dd0d258b8571c2564b820dc73950cde6c40168400ea54fa3c943?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
     }, 
     {  
         "name": "Computer Hardware Basics",
@@ -85,9 +55,24 @@
         "link": "https://www.credly.com/badges/73f76d16-3796-4006-983e-e924e8955e6f/linked_in_profile"
     }, 
     {  
+        "name": "Aprende data science: Conceptos básicos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/0aecc0abb905c8e961c4a42e5050ecfadd50ea53d43cb821f28490dfaaab85c4?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BHcrU8%2B7STEq128dwDOVVPw%3D%3D"
+    }, 
+    {  
         "name": "Data Visualization Using Python",
         "company": "IBM",
         "link": "https://www.credly.com/badges/2dc5a5eb-3af8-417c-9a12-baf468fc304a/linked_in_profile"
+    }, 
+    {  
+        "name": "Introducción a Microsoft 365",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/3b72f74dfcc755ba7c8c92e43f18515b64b3e9cb8a61be70237bb7382e2ed1c8?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
+    }, 
+    {  
+        "name": "Introducción a las habilidades profesionales en análisis de datos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/e133b338a7dbf7b215f6b3f852cb86ef3f9c48c057e94dc6542d95e1f6e8fb99?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
     }, 
     {  
         "name": "Network Defense",
@@ -125,15 +110,30 @@
         "link": "https://www.credly.com/badges/ca2fa593-c56b-4f7d-a16f-5b7fdb32c21f/linked_in_profile"
     }, 
     {  
+        "name": "Aprende data science: Cuenta historias con los datos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/ca4f46a3dbbf83aeecae517689eed3d718a1bb6b118f9dcc722acc3130f72e63?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
+    }, 
+    {  
         "name": "Python Essentials 2",
         "company": "Cisco",
         "link": "https://www.credly.com/badges/cfc3cbc8-ba59-4e03-8b13-6b935b0fb8f9/linked_in_profile"
     }, 
     {  
+        "name": "Fundamentos de la ciberseguridad para profesionales IT",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/fce0320362d1591d09a5f9cfb7e9fa771191b05ae157c824a9a7aad8e3f0504b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
+    }, 
+    {  
         "name": "Introduction to Cybersecurity",
         "company": "Cisco",
         "link": "https://www.credly.com/badges/ba145839-1941-41a6-a664-fabac4366f81/linked_in_profile"
-    },    
+    },
+    {  
+        "name": "Desafío de programación: Python para ciencia de datos",
+        "company": "LinkedIn Learning",
+        "link": "https://www.linkedin.com/learning/certificates/9a1da238bcd31dfe0a96cec2401412d805c3df1e3f6921d36922138aabcf04a6?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEsa%2BYhieRBilwwOsgkYkpw%3D%3D"
+    },     
     {  
         "name": "Python Essentials 1",
         "company": "Cisco",

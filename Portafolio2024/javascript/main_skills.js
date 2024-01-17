@@ -13,7 +13,7 @@ main_skills_reader.onload = function (e) {
         const main_skillDiv = document.createElement('div');
 
         const nameSpan = document.createElement('span');
-        nameSpan.classList.add('orange');
+        nameSpan.classList.add('code_text');
         nameSpan.innerText = `"${main_skill.name}"`;
 
         const comma = document.createElement('span');
