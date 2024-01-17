@@ -1,0 +1,111 @@
+/* Sections of the page*/
+.information_section{
+    width: 60%;
+
+}
+.animation{
+    width: 40%;
+    background-color: var(--yellow);
+}
+
+body {
+    --black: #232323;
+    --white: #f0f1f2;
+    --grey: #898989;
+    --purple: #b462ff;
+    --fuschia: #ff45b4;
+    --blue: #18b6ff;
+    --green: #1beb9e;
+    --orange: #ff9528;
+    --yellow: #dddd25;
+    --line: 2.5ch;
+    --font: 'Courier New', Courier, monospace;
+}
+
+body.invert {
+    --black: #f0f1f2;
+    --white: #232323;
+    --grey: #7e7e7e;
+    --purple: #6b1fa3;
+    --fuschia: #f50777;
+    --blue: #0b8cff;
+    --green: #00a76c;
+    --orange: #dd7200;
+    --yellow: #949700;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    background-color: var(--black);
+    font-family: var(--font);
+    margin: 10px;
+}
+
+
+/* Navegation Menu styles*/
+h1{
+    font-weight: lighter;
+    color: var(--white);
+}
+.nav_button{
+    border: none;
+    border-color: var(--black);
+    background-color: var(--black);
+    cursor: pointer;
+    font-size: 14px;
+}
+.nav_button.blue:hover{
+    background-color: var(--blue);
+    color: var(--black);  
+}
+.nav_button.green:hover{
+    background-color: var(--green);
+    color: var(--black);  
+}
+.nav_button.purple:hover{
+    background-color: var(--purple);
+    color: var(--black);  
+}
+
+/* Colored Elements styles*/
+.black{
+    color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+.grey{
+    color: var(--grey);
+}
+.purple{
+    color: var(--purple);
+}
+.fuschia{
+    color: var(--fuschia);
+}
+.blue{
+    color: var(--blue);   
+}
+.green{
+    color: var(--green);
+}
+.orange{
+    color: var(--orange);
+}
+.yellow{
+    color: var(--yellow);
+}
+
+/* Identation Level Styles*/
+.first_identation{
+    padding-left: 2%;
+}
+.second_identation{
+    padding-left: 4%;
+}
+.third_identation{
+    padding-left: 4%;
+}

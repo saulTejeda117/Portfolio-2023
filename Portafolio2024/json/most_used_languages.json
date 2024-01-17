@@ -1,0 +1,14 @@
+[  
+    {  
+        "name":"JavaScript",
+        "knowledge": "60%"
+    },
+    {  
+        "name":"Python",
+        "knowledge": "80%"
+    },
+    {  
+        "name":"C#",
+        "knowledge": "50%"
+    }  
+]
