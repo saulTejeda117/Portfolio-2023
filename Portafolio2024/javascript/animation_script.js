@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var theLetters = "a@b]c[%d*e+f-g)h&i\\j!k#l$m^n(o=pq {r}s3t2u1v0w9xyz";
-    var speed = 35;
+    var theLetters = "a@b]c[%d*e+f-g)h&ij!k#l$m^n(o=pq{r}stuvwxyz";
+    var speed = 45;
     var increment = 2;
   
     $(".code_text").each(function () {

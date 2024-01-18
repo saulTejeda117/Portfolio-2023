@@ -1,15 +1,23 @@
 /* Sections of the page*/
 .information_section{
     width: 60%;
-
+    height: 100%;
 }
 .animation{
     width: 40%;
-    align-items: center;
+    height: 100%;
 }
 
-/* Postion of the codes inside section */
+.code_container{
+    padding: 10px;
+}
+
+#main_skills_list{
+    margin-top: 10px;
+}
+
 #certifications_list {
+    margin-top: 10px;
     max-height: 150px;
     overflow-y: auto;
 }
@@ -20,7 +28,6 @@
 #certificacionDiv{
     padding: 10px;
 }
-
 
 body {
     --black: #232323;
@@ -35,7 +42,6 @@ body {
     --line: 2.5ch;
     --font: 'Courier New', Courier, monospace;
 }
-
 body.invert {
     --black: #f0f1f2;
     --white: #232323;
@@ -47,32 +53,53 @@ body.invert {
     --orange: #dd7200;
     --yellow: #949700;
 }
-
 body{
-     display: flex;
-    justify-content: space-between;
     user-select: none;
     background-color: var(--black);
     font-family: var(--font);
-    margin: 10px;
+    align-items: center;
 }
 
-
-/* Navegation Menu styles*/
+/* Title styles*/
+a{
+    text-decoration: none;
+}
 h1{
     font-weight: lighter;
-    color: var(--white);
-    font-size: larger;
+    font-size: 7vh; 
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+h3{
+    font-weight: lighter;
+    font-size: 2vh;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/* Navegation Menu styles*/
+.navigation{
+    padding-left: 5%;
+}
+.navigation_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .nav_button{
+    cursor: pointer;
     border: none;
     border-color: var(--black);
     background-color: var(--black);
-    cursor: pointer;
-    font-size: 14px;
+    font-size: 2vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .nav_button.blue:hover{
     background-color: var(--blue);
+    color: var(--black);  
+}
+.nav_button.yellow:hover{
+    background-color: var(--yellow);
     color: var(--black);  
 }
 .nav_button.green:hover{
@@ -82,6 +109,10 @@ h1{
 .nav_button.purple:hover{
     background-color: var(--purple);
     color: var(--black);  
+}
+.nav_button.orange:hover{
+    color: var(--black);  
+    background-color: var(--orange);
 }
 
 /* Colored Elements styles*/
@@ -121,5 +152,5 @@ h1{
     padding-left: 4%;
 }
 .third_identation{
-    padding-left: 4%;
+    padding-left: 6%;
 }

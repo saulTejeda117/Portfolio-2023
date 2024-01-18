@@ -1,14 +1,14 @@
 [  
     {  
         "name":"JavaScript",
-        "knowledge": "60%"
+        "knowledge": "60"
     },
     {  
         "name":"Python",
-        "knowledge": "80%"
+        "knowledge": "80"
     },
     {  
         "name":"C#",
-        "knowledge": "50%"
+        "knowledge": "50"
     }  
 ]

@@ -21,7 +21,7 @@ function cut_company(certification_company){
     certification_company = certification_company.substring(0, 10);
     return certification_company;
 }
-
+    
 certifications_reader.onload = function (e) {
     const content = e.target.result;
     console.log('Contenido del certifications:', content);
@@ -49,7 +49,9 @@ certifications_reader.onload = function (e) {
         dots.innerText = ` : `;
 
         const linkspan = document.createElement('span');
+        linkspan.classList.add('nav_button');
         linkspan.classList.add('orange');
+        
         linkspan.innerHTML = `<a class= "orange" href="${certificacion.link}" target="_blank">[${shorter_company}]</a>`;
 
         const comma = document.createElement('span');
@@ -57,7 +59,6 @@ certifications_reader.onload = function (e) {
         comma.innerText = `,`;
 
         // Agregar los spans al div contenedor de la certificación
-
         certificacionDiv.appendChild(linkspan);
         certificacionDiv.appendChild(dots);
         certificacionDiv.appendChild(nameSpan);
