@@ -1,0 +1,32 @@
+[  
+    {  
+        "name": "SUDISA - Balatas Analyzer",
+        "Languaje": "Python",
+        "description": "Image classification software using machine learning; automates label printing for detected good condition products; integrates Google Sheets API for seamless cloud-based reporting.",
+        "link": "https://github.com/saulTejeda117/BALATAS_SUDISA"
+    },
+    {  
+        "name": "OrganizApp",
+        "Languaje": "HTML, CSS, JavaScript",
+        "description": "Project management web app with user-friendly interface; organizes tasks, promotes team collaboration, and tracks project progress effectively for seamless project management.",
+        "link": "https://github.com/saulTejeda117/OrganizApp"
+    },
+    {  
+        "name": "Steam-Data-Analyzer",
+        "Languaje": "Jupyter (Python)",
+        "description": "Data science project analyzes gaming habits using Steam and howlongtobeat data. Utilizes Steam API for game insights, playtime, achievements, and howlongtobeat scraping for game duration information.",
+        "link": "https://github.com/saulTejeda117/Steam-Data-Analyzer"
+    },
+    {  
+        "name": "SADRPETE",
+        "Languaje": "Kotlin, Java, Python",
+        "description": "Cross-platform mobile app uses Google ML Kit API to detect body parts through camera, analyzes angles for postural risk assessment based on RULA and REBA system.",
+        "link": "https://github.com/SamuelBarajas/ANDROID_ML_APP_posturas"
+    },
+    {  
+        "name": "Tkinter-Aplications",
+        "Languaje": "Python",
+        "description": "Tkinter Projects repository showcases diverse Python applications, including a multifunctional watch, agenda, and calculator, prioritizing user experience with intuitive interfaces and customization options.",
+        "link": "https://github.com/saulTejeda117/Tkinter-Aplications"
+    }
+]

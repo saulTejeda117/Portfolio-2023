@@ -11,14 +11,18 @@ main_skills_reader.onload = function (e) {
     jsonData.forEach(main_skill => {
         // Crear un div contenedor para cada main_skill
         const main_skillDiv = document.createElement('div');
-        main_skillDiv.classList.add('code_text'); // Agrega la clase 'code_text' para la animación
+        main_skillDiv.id = 'main_skillDivDiv';
 
         const nameSpan = document.createElement('span');
         nameSpan.classList.add('orange');
+        nameSpan.classList.add('code_text');
+        nameSpan.classList.add('animated_code_text');
         nameSpan.innerText = `"${main_skill.name}"`;
 
         const comma = document.createElement('span');
         comma.classList.add('green');
+        comma.classList.add('code_text');
+        comma.classList.add('animated_code_text');
         comma.innerText = `,`;
 
         // Agregar los spans al div contenedor de la main_skill

@@ -1,32 +1,48 @@
 /* Sections of the page*/
 .information_section{
-    width: 60%;
+    width: 55%;
     height: 100%;
 }
 .animation{
-    width: 40%;
+    width: 35%;
     height: 100%;
+    margin-top: 5%;
+}
+
+/* .animated_code_text{
+    visibility: hidden;
+} */
+
+.comment_container{
+    display: flex;
+    flex-direction: column;
 }
 
 .code_container{
     padding: 10px;
 }
 
-#main_skills_list{
-    margin-top: 10px;
+.comment{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#main_skillDivDiv{
+    padding: 4px;
+}
+#languageDiv{
+    padding: 4px;
 }
 
 #certifications_list {
-    margin-top: 10px;
     max-height: 150px;
     overflow-y: auto;
 }
 #certifications_list::-webkit-scrollbar {
     display: none;
 }
-
 #certificacionDiv{
-    padding: 10px;
+    padding: 4px;
 }
 
 body {
@@ -54,10 +70,11 @@ body.invert {
     --yellow: #949700;
 }
 body{
+    display: flex;
+    flex-direction: row;
     user-select: none;
     background-color: var(--black);
     font-family: var(--font);
-    align-items: center;
 }
 
 /* Title styles*/
@@ -77,6 +94,10 @@ h3{
     margin-top: 0px;
 }
 
+.code_text{
+    font-size: 2vh;
+}
+
 /* Navegation Menu styles*/
 .navigation{
     padding-left: 5%;
@@ -84,7 +105,6 @@ h3{
 .navigation_menu{
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 .nav_button{
     cursor: pointer;

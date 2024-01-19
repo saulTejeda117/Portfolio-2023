@@ -3,7 +3,7 @@ $(document).ready(function () {
     var speed = 45;
     var increment = 2;
   
-    $(".code_text").each(function () {
+    $(".animated_code_text").each(function () {
       var $element = $(this);  // Guardar referencia al elemento actual
       var spanText = $element.text();
       var clen = spanText.length;
