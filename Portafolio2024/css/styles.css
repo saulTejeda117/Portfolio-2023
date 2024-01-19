@@ -26,6 +26,15 @@
     overflow: hidden;
     white-space: nowrap;
 }
+#personal_projects_list{
+    max-height: 500px;
+    overflow-y: auto;
+}
+#personal_projects_list::-webkit-scrollbar {
+    display: none;
+}
+
+
 
 #main_skillDivDiv{
     padding: 4px;
