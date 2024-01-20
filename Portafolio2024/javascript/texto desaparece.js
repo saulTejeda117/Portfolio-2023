@@ -1,35 +1,23 @@
-const most_used_languages = 'json/most_used_languages.json';
-const most_used_languages_reader = new FileReader();
+const main_skills = 'json/main_skills.json';
+const main_skills_reader = new FileReader();
 
-most_used_languages_reader.onload = function (e) {
+main_skills_reader.onload = function (e) {
     const content = e.target.result;
     // Parsear el contenido como JSON
     const jsonData = JSON.parse(content);
     console.log('Datos JSON:', jsonData);
 
     // Recorrer el array de main_skills y crear divs con spans para cada una
-    jsonData.forEach(language => {
-        // Crear un div contenedor para cada certificación
-        const languageDiv = document.createElement('div');
-        languageDiv.id = 'languageDivDivDiv';
+    jsonData.forEach(main_skill => {
+        // Crear un div contenedor para cada main_skill
+        const main_skillDiv = document.createElement('div');
+        main_skillDiv.id = 'main_skillDivDiv';
 
         const nameSpan = document.createElement('span');
         nameSpan.classList.add('orange');
         nameSpan.classList.add('code_text');
         nameSpan.classList.add('animated_code_text');
-        nameSpan.innerText = `"${language.name}"`;
-
-        const dots = document.createElement('span');
-        dots.classList.add('green');
-        dots.classList.add('code_text');
-        dots.classList.add('animated_code_text');
-        dots.innerText = ` : `;
-
-        const knowledgespan = document.createElement('span');
-        knowledgespan.classList.add('orange');
-        knowledgespan.classList.add('code_text');
-        knowledgespan.classList.add('animated_code_text');
-        knowledgespan.innerHTML = `"${language.knowledge}"`;
+        nameSpan.innerText = `"${main_skill.name}"`;
 
         const comma = document.createElement('span');
         comma.classList.add('green');
@@ -37,17 +25,15 @@ most_used_languages_reader.onload = function (e) {
         comma.classList.add('animated_code_text');
         comma.innerText = `,`;
 
-        // Agregar los spans al div contenedor de la certificación
-        languageDiv.appendChild(nameSpan);
-        languageDiv.appendChild(dots);
-        languageDiv.appendChild(knowledgespan);
-        languageDiv.appendChild(comma);
+        // Agregar los spans al div contenedor de la main_skill
+        main_skillDiv.appendChild(nameSpan);
+        main_skillDiv.appendChild(comma);
 
-        // Agregar el div de la certificación al documento
-        document.getElementById('most_used_languages_list').appendChild(languageDiv);
+        // Agregar el div de la main_skill al documento
+        document.getElementById('main_skills_list').appendChild(main_skillDiv);
 
         // Aplicar la animación a cada elemento dentro de main_skillDiv
-        animateText([nameSpan, knowledgespan]);
+        animateText([nameSpan, comma]);
     });
 };
 
@@ -101,6 +87,23 @@ function animateText(elements) {
 }
 
 function replaceElementContent(element, newContent) {
+    // Copiar las propiedades del elemento original al nuevo contenido
+    Array.from(element.attributes).forEach(attr => {
+        newContent.setAttribute(attr.name, attr.value);
+    });
+
+    // Copiar eventos del elemento original al nuevo contenido
+    element.cloneNode(true).childNodes.forEach((node, index) => {
+        if (node.nodeType === 1) {  // Nodo de elemento
+            const eventListeners = getEventListeners(node);
+            Object.keys(eventListeners).forEach(eventType => {
+                eventListeners[eventType].forEach(listener => {
+                    newContent.childNodes[index].addEventListener(eventType, listener);
+                });
+            });
+        }
+    });
+
     // Reemplazar el contenido del elemento original con el nuevo contenido
     while (element.firstChild) {
         element.removeChild(element.firstChild);
@@ -108,6 +111,6 @@ function replaceElementContent(element, newContent) {
     element.appendChild(newContent);
 }
 
-fetch(most_used_languages)
+fetch(main_skills)
     .then(response => response.text())
-    .then(data => most_used_languages_reader.readAsText(new Blob([data])));
+    .then(data => main_skills_reader.readAsText(new Blob([data])));
