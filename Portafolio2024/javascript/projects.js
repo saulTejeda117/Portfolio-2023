@@ -12,14 +12,29 @@ $(document).ready(function () {
         return projects_name;
     }
 
+
+    function cut_description(projectsDescriptionDiv, description) {
+        const words = description.split(' ');
+        console.log('Contenido del projects:', words);
+
+        for (let i = 0; i < words.length; i += 3) {
+            const group = words.slice(i, i + 3);
+            const description = document.createElement('span');
+            
+            description.classList.add('grey');
+            description.classList.add('comment');
+            description.innerHTML = `# ${group.join(' ')}`;
+            projectsDescriptionDiv.appendChild(description);
+            animateText([description]);
+        }
+    }
+
     projects_reader.onload = function (e) {
         const content = e.target.result;
-        console.log('Contenido del projects:', content);
+        
 
         // Parsear el contenido como JSON
         const jsonData = JSON.parse(content);
-        console.log('Datos JSON:', jsonData);
-
         // Recorrer el array de certificaciones y crear divs con spans para cada una
         jsonData.forEach(projects => {
             // Crear un div contenedor para cada certificación
@@ -30,30 +45,42 @@ $(document).ready(function () {
 
             var shorter_projects = cut_names(projects.name);
 
+            const defSpan = document.createElement('span');
+            defSpan.classList.add('blue');
+            defSpan.innerText = `def `;
+
             const nameSpan = document.createElement('span');
             nameSpan.classList.add('green');
-            nameSpan.innerText = `"${shorter_projects}"`;
+            nameSpan.innerText = `${shorter_projects}`;
 
             const equal = document.createElement('span');
             equal.classList.add('white');
-            equal.innerText = ` = { `;
+            equal.innerText = `():`;
 
             // Other container inside 
             const projectsInfoDiv = document.createElement('div');
             projectsInfoDiv.classList.add('second_identation');
+            projectsInfoDiv.classList.add('code_container');
 
-            const text_language = document.createElement('span');
-            text_language.classList.add('orange');
-            text_language.innerText = `"Language"`;
+            const print_language = document.createElement('span');
+            print_language.classList.add('blue');
+            print_language.innerText = `print`;
 
             const dots = document.createElement('span');
-            dots.classList.add('green');
-            dots.innerText = ` : `;
+            dots.classList.add('white');
+            dots.innerText = `(`;
 
             const languages = document.createElement('span');
             languages.classList.add('orange');
-            languages.innerText = `[${projects.language}]`;
+            languages.innerText = `"Language: {${projects.language}}"`;
 
+            const end = document.createElement('span');
+            end.classList.add('white');
+            end.innerText = `)`;
+
+            const retunspan = document.createElement('span');
+            retunspan.classList.add('purple');
+            retunspan.innerText = `return`;
 
             const linkspan = document.createElement('span');
             linkspan.classList.add('nav_button');
@@ -64,45 +91,35 @@ $(document).ready(function () {
             comma.classList.add('green');
             comma.innerText = `,`;
 
-            const end = document.createElement('span');
-            end.classList.add('white');
-            end.innerText = `}`;
-
-
             // Other container inside 
             const projectsDescriptionDiv = document.createElement('div');
+            projectsDescriptionDiv.classList.add('comment_container');
             projectsDescriptionDiv.classList.add('code_container');
 
-            const description = document.createElement('span');
-            description.classList.add('grey');
-            description.innerText = `/* ${projects.description} */`;
-
-
-
-            // Agregar los spans al div contenedor de la descripción
-            projectsDescriptionDiv.appendChild(description);
+            cut_description(projectsDescriptionDiv, projects.description);
 
 
             // Agregar los spans al div contenedor de la información del proyecto
-            projectsInfoDiv.appendChild(text_language);
+            projectsInfoDiv.appendChild(print_language);
             projectsInfoDiv.appendChild(dots);
             projectsInfoDiv.appendChild(languages);
+            projectsInfoDiv.appendChild(end);
             projectsInfoDiv.appendChild(projectsDescriptionDiv);
+            projectsInfoDiv.appendChild(retunspan);
             projectsInfoDiv.appendChild(linkspan);
 
-
             // Agregar los spans al div contenedor de la certificación
-
+            projectsDiv.appendChild(defSpan);
             projectsDiv.appendChild(nameSpan);
             projectsDiv.appendChild(equal);
             projectsDiv.appendChild(projectsInfoDiv);
-            projectsDiv.appendChild(end);
+            
 
             // Agregar el div de la certificación al documento
             document.getElementById('personal_projects_list').appendChild(projectsDiv);
 
             // Aplicar la animación a cada elemento dentro de projectsDiv
-            animateText([nameSpan, text_language, languages, linkspan]);
+            animateText([nameSpan, print_language, languages, linkspan, equal, dots, end, defSpan, retunspan]);
         });
     };
 
