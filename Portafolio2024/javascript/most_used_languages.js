@@ -16,25 +16,21 @@ most_used_languages_reader.onload = function (e) {
         const nameSpan = document.createElement('span');
         nameSpan.classList.add('orange');
         nameSpan.classList.add('code_text');
-        nameSpan.classList.add('animated_code_text');
-        nameSpan.innerText = `"${language.name}"`;
+        nameSpan.innerText = `"${language.name}" `;
 
         const dots = document.createElement('span');
         dots.classList.add('green');
         dots.classList.add('code_text');
-        dots.classList.add('animated_code_text');
         dots.innerText = ` : `;
 
         const knowledgespan = document.createElement('span');
         knowledgespan.classList.add('orange');
         knowledgespan.classList.add('code_text');
-        knowledgespan.classList.add('animated_code_text');
         knowledgespan.innerHTML = `"${language.knowledge}"`;
 
         const comma = document.createElement('span');
         comma.classList.add('green');
         comma.classList.add('code_text');
-        comma.classList.add('animated_code_text');
         comma.innerText = `,`;
 
         // Agregar los spans al div contenedor de la certificación

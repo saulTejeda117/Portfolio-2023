@@ -2,10 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="css/crt-effect.css">
+        <!-- Script para detectar dispositivo y cargar hoja de estilos específica -->
+        <script>
+            let navegador = navigator.userAgent;
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                document.write('<link rel="stylesheet" type="text/css" href="css/mobile_styles.css">');
+            } else {
+                document.write('<link rel="stylesheet" type="text/css" href="css/styles.css">');
+            }
+        </script>
         <link rel="shortcut icon" href="src/div_icon.ico" />
-        <title>Saul Tejeda - Projects</title>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+        <title>Saul Tejeda - Contact</title>
     </head>
     <body class="crt">
         <section class="information_section">
@@ -30,23 +40,15 @@
                 <span class="animated_code_text code_text white">():</span>
                 <div class="second_identation code_container">
                     <div class="code_container">
-                        <span class="animated_code_text code_text blue">print</span>
-                        <span class="animated_code_text code_text white">(</span>
-                        <span class="animated_code_text code_text orange">f"Git_hub:</span>
-                        <a href="https://github.com/saulTejeda117" target="_blank"><span class="nav_button animated_code_text code_text yellow">{link}</span></a>
-                        <span class="animated_code_text code_text orange">"</span>
-                        <span class="animated_code_text code_text white">)</span>    
+                        <span class="animated_code_text code_text grey">Github:</span>
+                        <span class="animated_code_text code_text white">=</span>
+                        <a href="https://github.com/saulTejeda117" target="_blank"><span class="nav_button animated_code_text code_text yellow">[link]</span></a>
                     </div>
-
                     <div class="code_container">
-                        <span class="animated_code_text code_text blue">print</span>
-                        <span class="animated_code_text code_text white">(</span>
-                        <span class="animated_code_text code_text orange">f"Linked_In:</span>
-                        <a href="https://www.linkedin.com/in/saultejeda/" target="_blank"><span class="nav_button animated_code_text code_text yellow">{link}</span></a>
-                        <span class="animated_code_text code_text orange">"</span>
-                        <span class="animated_code_text code_text white">)</span>    
+                        <span class="animated_code_text code_text blue">LinkedIn:</span>
+                        <span class="animated_code_text code_text white">=</span>
+                        <a href="https://www.linkedin.com/in/saultejeda/" target="_blank"><span class="nav_button animated_code_text code_text yellow">[link]</span></a>   
                     </div>
-
                     <div class="code_container">
                         <span class="animated_code_text code_text purple">curriculum</span>
                         <span class="animated_code_text code_text white">=</span>

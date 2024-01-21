@@ -3,15 +3,14 @@ $(document).ready(function () {
     const projects_reader = new FileReader();
 
     function cut_names(projects_name) {
-        if (projects_name.length >= 30) {
-            projects_name = projects_name.substring(0, 30);
+        if (projects_name.length >= 10) {
+            projects_name = projects_name.substring(0, 10);
             projects_name += "...";
         } else {
             projects_name = projects_name;
         }
         return projects_name;
     }
-
 
     function cut_description(projectsDescriptionDiv, description) {
         const words = description.split(' ');
@@ -63,20 +62,16 @@ $(document).ready(function () {
             projectsInfoDiv.classList.add('code_container');
 
             const print_language = document.createElement('span');
-            print_language.classList.add('blue');
-            print_language.innerText = `print`;
+            print_language.classList.add('green');
+            print_language.innerText = `language`;
 
             const dots = document.createElement('span');
             dots.classList.add('white');
-            dots.innerText = `(`;
+            dots.innerText = ` = `;
 
             const languages = document.createElement('span');
             languages.classList.add('orange');
-            languages.innerText = `"Language: {${projects.language}}"`;
-
-            const end = document.createElement('span');
-            end.classList.add('white');
-            end.innerText = `)`;
+            languages.innerText = `[${projects.language}]`;
 
             const retunspan = document.createElement('span');
             retunspan.classList.add('purple');
@@ -103,7 +98,6 @@ $(document).ready(function () {
             projectsInfoDiv.appendChild(print_language);
             projectsInfoDiv.appendChild(dots);
             projectsInfoDiv.appendChild(languages);
-            projectsInfoDiv.appendChild(end);
             projectsInfoDiv.appendChild(projectsDescriptionDiv);
             projectsInfoDiv.appendChild(retunspan);
             projectsInfoDiv.appendChild(linkspan);
@@ -119,7 +113,7 @@ $(document).ready(function () {
             document.getElementById('personal_projects_list').appendChild(projectsDiv);
 
             // Aplicar la animación a cada elemento dentro de projectsDiv
-            animateText([nameSpan, print_language, languages, linkspan, equal, dots, end, defSpan, retunspan]);
+            animateText([nameSpan, print_language, languages, linkspan, equal, dots, defSpan, retunspan]);
         });
     };
 
@@ -174,10 +168,7 @@ $(document).ready(function () {
 
     function replaceElementContent(element, newContent) {
         // Reemplazar el contenido del elemento original con el nuevo contenido
-        while (element.firstChild) {
-            element.removeChild(element.firstChild);
-        }
-        element.appendChild(newContent);
+        element.innerHTML = newContent.innerHTML;
     }
 
     fetch(projects)
