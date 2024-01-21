@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/crt-effect.css">
-    <link rel="shortcut icon" href="src/div_icon.ico" />
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <title>Saul Tejeda - Home</title>
-</head>
-<body class="crt">
-    <div class="screen"></div>
-    <section class="information_section">
-        <section class="navigation">
-            <!-- Title -->
-            <h1><a class="animated_code_text white" href="index.html">Saul Tejeda</a></h1>
-            <h3 class="animated_code_text grey">Developer & Data Analyst</h3>
-            <!-- Navigation Menu -->
-            <section class="navigation_menu">
-                <span><a class="animated_code_text nav_button yellow" href="index.html">[Home]</a></span>
-                <span><a class="animated_code_text nav_button green" href="about.html">[About]</a></span>
-                <span><a class="animated_code_text nav_button purple" href="projects.html">[Projects]</a></span>
-                <span><a class="animated_code_text nav_button blue" href="contact.html">[Contact]</a></span>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/crt-effect.css">
+        <!-- Script para detectar dispositivo y cargar hoja de estilos específica -->
+        <script>
+            let navegador = navigator.userAgent;
+            if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
+                document.write('<link rel="stylesheet" type="text/css" href="css/mobile_styles.css">');
+            } else {
+                document.write('<link rel="stylesheet" type="text/css" href="css/styles.css">');
+            }
+        </script>
+        <link rel="shortcut icon" href="src/div_icon.ico" />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+        <title>Saul Tejeda - Home</title>
+    </head>
+    <body class="crt">
+        <div class="screen"></div>
+        <section class="information_section">
+            <section class="navigation">
+                <!-- Title -->
+                <h1><a class="animated_code_text white" href="index.html">Saul Tejeda</a></h1>
+                <h3 class="animated_code_text grey">Developer & Data Analyst</h3>
+                <!-- Navigation Menu -->
+                <section class="navigation_menu">
+                    <span><a class="animated_code_text nav_button yellow" href="index.html">[Home]</a></span>
+                    <span><a class="animated_code_text nav_button green" href="about.html">[About]</a></span>
+                    <span><a class="animated_code_text nav_button purple" href="projects.html">[Projects]</a></span>
+                    <span><a class="animated_code_text nav_button blue" href="contact.html">[Contact]</a></span>
+                </section>
             </section>
         </section>
-    </section>
-    <script src="javascript/turn_on_tv.js"></script>
-    <script src="javascript/animation_script.js"></script>
-</body>
-
+        <script src="javascript/turn_on_tv.js"></script>
+        <script src="javascript/animation_script.js"></script>
+    </body>
 </html>

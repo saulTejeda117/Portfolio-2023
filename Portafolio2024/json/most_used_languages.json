@@ -1,14 +1,14 @@
 [  
     {  
         "name":"JavaScript",
-        "knowledge": "[■ ■ ■ ■ ■ ■ □ □ □ □]"
+        "knowledge": "[■■■■■■□□□□]"
     },
     {  
         "name":"Python",
-        "knowledge": "[■ ■ ■ ■ ■ ■ ■ ■ □ □]"
+        "knowledge": "[■■■■■■■■□□]"
     },
     {  
         "name":"C#",
-        "knowledge": "[■ ■ ■ ■ ■ □ □ □ □ □]"
+        "knowledge": "[■■■■■□□□□□]"
     }  
 ]
